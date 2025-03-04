@@ -1,18 +1,19 @@
+"use strict";
 // Primitive DataTypes
 // 1. Number
-var num = 10;
+let num = 10;
 console.log(num);
 // 2. String
-var str = "Hello";
+let str = "Hello";
 console.log(str);
 // 3. Boolean
-var isTrue = true;
+let isTrue = true;
 console.log(isTrue);
 // 4. Undefined
-var u = undefined;
+let u = undefined;
 console.log(u);
 // 5. Null
-var n = null;
+let n = null;
 console.log(n);
 // Void
 function greet() {
@@ -20,13 +21,33 @@ function greet() {
 }
 greet();
 // Any
-var a; // By default it is of type any
+let a; // By default it is of type any
+a = 10;
+a = "Hello";
+a.toLowerCase(); // No error as it is of type any
 // Unknown
-var b;
+let b;
+b = 10;
 b = "Hello";
+// b.toLowerCase(); // Error as it is of type unknown
+if (typeof b === "string") {
+    b.toLowerCase();
+}
 console.log(b);
+// // Never
+// function throwError(): never {
+//   throw new Error();
+// }
+// throwError();
+// Reference DataTypes
+// Object
+let obj = {
+    name: "John",
+    age: 25,
+};
+console.log(obj);
 // Array
-var arr = [
+let arr = [
     1,
     2,
     3,
@@ -37,7 +58,7 @@ var arr = [
 ];
 console.log(arr);
 // Tuple
-var person = [
+let person = [
     "John",
     25,
     { position: "Developer" },
