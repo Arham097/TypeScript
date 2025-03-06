@@ -35,6 +35,6 @@ var Human = /** @class */ (function () {
     return Human;
 }());
 var h1 = new Human("John", 25, 1001);
-console.log(h1);
 var h2 = new Human("Doe", 30, "1002");
+console.log(h1);
 console.log(h2);

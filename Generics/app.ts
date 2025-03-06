@@ -44,6 +44,6 @@ class Human<T> {
   constructor(public name: string, public age: number, public id: T) {}
 }
 const h1 = new Human<number>("John", 25, 1001);
-console.log(h1);
 const h2 = new Human<string>("Doe", 30, "1002");
+console.log(h1);
 console.log(h2);
