@@ -131,7 +131,8 @@ class BottleMaker {
 
 ### **Readonly Properties**
 
-Prevents reassignment after initialization. Example:
+Prevents reassignment after initialization.<br>
+Example:
 
 ```typescript
 class Car {
@@ -143,7 +144,7 @@ class Car {
 ```
 
 ### **Optional Properties**
-Optional properties in TypeScript are properties that may or may not be present in an object. They are defined using a ? after the property name.
+Optional properties in TypeScript are properties that may or may not be present in an object. They are defined using a `?` after the property name.<br>
 Example:
 
 ```typescript
@@ -153,7 +154,7 @@ class Person {
 ```
 
 ### **Parameter Properties**
-Parameter properties in TypeScript provide a shorthand way to declare and initialize class properties directly in the constructor. They use access modifiers (public, private, or protected).
+Parameter properties in TypeScript provide a shorthand way to declare and initialize class properties directly in the constructor. They use access modifiers (public, private, or protected).<br>
 Example:
 ```typescript
 class Bike {
@@ -163,10 +164,10 @@ class Bike {
 
 ### **Getters and Setters**
 
-Getters and setters allow controlled access to class properties.
+Getters and setters allow controlled access to class properties.<br>
 
-`get` retrieves a property value.
-`set` updates a property value with optional validation.
+`get` retrieves a property value.<br>
+`set` updates a property value with optional validation.<br>
 
 Example:
 
@@ -184,8 +185,7 @@ class Student {
 
 ### **Static Members**
 
-Static members belong to the class itself rather than instances. They can be accessed using the class name.
-
+Static members belong to the class itself rather than instances. They can be accessed using the class name.<br>
 Example:
 ```typescript
 class Circle {
@@ -196,7 +196,7 @@ console.log(Circle.pi);
 
 ### **Abstract Classes**
 
-Abstract classes serve as blueprints for other classes and cannot be instantiated directly. They are used to define common properties and methods that subclasses must implement.
+Abstract classes serve as blueprints for other classes and cannot be instantiated directly. They are used to define common properties and methods that subclasses must implement.<br>
 
 Example:
 
