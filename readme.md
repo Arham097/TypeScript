@@ -143,7 +143,7 @@ class Car {
 ```
 
 ### **Optional Properties**
-
+Optional properties in TypeScript are properties that may or may not be present in an object. They are defined using a ? after the property name.
 Example:
 
 ```typescript
@@ -153,7 +153,8 @@ class Person {
 ```
 
 ### **Parameter Properties**
-
+Parameter properties in TypeScript provide a shorthand way to declare and initialize class properties directly in the constructor. They use access modifiers (public, private, or protected).
+Example:
 ```typescript
 class Bike {
   constructor(public model: string, private price: number) {}
@@ -161,6 +162,13 @@ class Bike {
 ```
 
 ### **Getters and Setters**
+
+Getters and setters allow controlled access to class properties.
+
+`get` retrieves a property value.
+`set` updates a property value with optional validation.
+
+Example:
 
 ```typescript
 class Student {
@@ -176,6 +184,9 @@ class Student {
 
 ### **Static Members**
 
+Static members belong to the class itself rather than instances. They can be accessed using the class name.
+
+Example:
 ```typescript
 class Circle {
   static pi: number = 3.14;
@@ -183,17 +194,29 @@ class Circle {
 console.log(Circle.pi);
 ```
 
-### **Abstract Classes and Methods**
+### **Abstract Classes**
+
+Abstract classes serve as blueprints for other classes and cannot be instantiated directly. They are used to define common properties and methods that subclasses must implement.
+
+Example:
 
 ```typescript
 abstract class Payment {
   constructor(public amount: number, public account: number) {}
+
+  abstract processPayment(): void; // Abstract method to be implemented by subclasses
 }
+
 class CreditCard extends Payment {
   constructor(amount: number, account: number, public cardNumber: number) {
     super(amount, account);
   }
+
+  processPayment(): void {
+    console.log(`Processing credit card payment of $${this.amount} from account ${this.account}`);
+  }
 }
+
 ```
 
 ---
